@@ -16,3 +16,18 @@
 ### What is *HoneyComb*?
 
 ***HoneyComb*** is an interperted multidimensional ***esoteric*** programming language designed to resemble a Honeycomb in design and runtime. Written in *Python 3.13.7*, it is **lightweight**, **OS-Friendly** and **extendable**.
+
+### 🐝 Features / Goals
+- Multidimensional program structure  
+- Lightweight & extendable interpreter  
+- Cross-platform support (Linux, Windows, Mac)  
+- Esoteric design inspired by honeycomb patterns
+
+### 🚧 Roadmap
+- [ ] Core interpreter  
+- [ ] Basic honeycomb runtime grid  
+- [ ] Example programs  
+- [ ] Extended language features  
+- [ ] Documentation & tutorials
+
+***Buzzing in binary! 🐝***
