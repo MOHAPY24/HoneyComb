@@ -100,6 +100,10 @@ Contributions are welcome! 👐
 
 ---
 
+## More Info
+
+For more information see [general.md](general.md).
+
 ## 📜 License
 
 Licensed under the **Apache License 2.0** ✅
