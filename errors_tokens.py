@@ -17,5 +17,8 @@ TOKENS = {
     "," : "PRINT_CELL_ASCII",
     ":" : "CELL_INPUT",
     "(" : "COMMENT_START",
-    ")" : "COMMENT_END"
+    ")" : "COMMENT_END",
+    "#" : "IF_0"
 }
+
+TOKENS_LIST = list(TOKENS)

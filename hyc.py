@@ -1,11 +1,21 @@
 from honeycomb import Interperter
 import os
+import sys
+
+inte = Interperter()
+
+if sys.argv and '.hc' in sys.argv[1]:
+    inte.load_file_code(str(sys.argv[1]))
+    inte.parse()
+    print()
+    quit(0)
 
 cptr = 0
 
+
+
 if __name__ == "__main__":
     print("HoneyComb 0.0.1 BETA REPL, GPL 3.0 License Copyright Mohammed Abdelaal. \nPython 3.9 \n'--help' for more information.\n")
-    inte = Interperter()
     while True:
         cmd = input(f"in [{cptr}] HoneyComb $$> ").strip()
         if cptr >= 20:
@@ -26,4 +36,6 @@ if __name__ == "__main__":
             break
         inte.add_code(cmd)
         inte.parse()
+        print()
+        
         cptr += 1

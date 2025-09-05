@@ -193,5 +193,25 @@ class CellLeft(ASTNode):
     
     def __repr__(self):
         return self.__str__()
+
+class CommentChar(ASTNode):
+    def __init__(self, comment):
+        self.op = comment
     
-ALL_AST_NODES = ASTNode.__subclasses__()
+    def __str__(self):
+        return self.op
+    
+    def __repr__(self):
+        return self.__str__()
+
+class If0(ASTNode):
+    def __init__(self):
+        self.op = "#"
+    
+    def __str__(self):
+        return self.op
+    
+    def __repr__(self):
+        return self.__str__()
+    
+ALL_AST_NODES = list(ASTNode.__subclasses__())
