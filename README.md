@@ -1,3 +1,5 @@
+## THIS IS STILL A WORK IN PROGRESS, IT IS NO WAY DONE AND IS NOT MENT FOR ANY USE CURRENTLY
+
 # *HoneyComb* 🐝
 
 [![Python](https://img.shields.io/badge/python-3.13.7-yellow.svg)](https://www.python.org/downloads/release/python-3137/)
