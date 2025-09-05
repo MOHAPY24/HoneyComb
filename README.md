@@ -1,7 +1,7 @@
 # *HoneyComb* 🐝
 
 ![Python](https://imgs.shields.io/badge/Python-3.9-blue?logo=python)
-[![License](https://img.shields.io/:license-Apache%202-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.txt)  
+[![License](https://img.shields.io/:license-Apache%202-blue.svg)](LICENSE)  
 
 ## An interperted multidimensional esoteric programming language
 
