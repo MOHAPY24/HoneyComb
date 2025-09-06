@@ -1,5 +1,7 @@
 # 🐝 HoneyComb
 
+[![Logo](assets/HC(1).png)
+
 [![Python](https://img.shields.io/badge/python-3.13.7-yellow.svg)](https://www.python.org/downloads/release/python-3137/)
 [![License](https://img.shields.io/\:license-Apache%202-blue.svg)](LICENSE)
 ![Status](https://img.shields.io/badge/status-Production--Ready-success.svg)
