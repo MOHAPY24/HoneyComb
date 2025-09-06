@@ -100,9 +100,9 @@ Contributions are welcome! 👐
 
 ---
 
-## More Info
+## More Info 🐝📔
 
-For more information see: [general](general.md) for general information and see [Syntax](Syntax.md) for general usage information like syntax.
+For more information see: **[general](general.md)** for general information and see **[syntax](Syntax.md)** for general usage information like syntax.
 
 ## 📜 License
 
