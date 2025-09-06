@@ -116,6 +116,9 @@ class Interperter:
                 elif current_char == "#" and self.comment_mode != True:
                     token = Token("#", TOKENS.get("#"))
                     return token
+                elif current_char.isdigit() and self.comment_mode != True:
+                    token = Token(current_char, 'INT')
+                    return token
         
                 else:
                     if self.comment_mode:
@@ -228,12 +231,12 @@ class Interperter:
         if cmd == ":":
             if self.ymode:
                 try:
-                    self.ytape[self.ccomby][self.ytape] += int(input("> "))
+                    self.ytape[self.ccomby][self.yptr] += int(input("> "))
                 except ValueError:
                     raise ValueError("Input not int_type.")
             else:
                 try:
-                    self.xtape[self.ccombx][self.xtape] += int(input("> "))
+                    self.xtape[self.ccombx][self.xptr] += int(input("> "))
                 except ValueError:
                     raise ValueError("Input not int_type.")
         else:
@@ -391,6 +394,8 @@ class Interperter:
                 self.ifo()
                 ast.append(If0())
             elif "comment" in cmd1:
+                pass
+            elif "INT" in self.current_token.type:
                 pass
             else:
                 raise SyntaxError(f'{datetime.datetime.now()}: {cmd1} is valid syntax but it hasnt been mapped or your interperter is broken, either re-install HoneyComb or try again.')
