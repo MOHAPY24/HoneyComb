@@ -55,7 +55,7 @@ HoneyComb/
 ```bash
 git clone https://github.com/MOHAPY24/HoneyComb.git
 cd HoneyComb
-python3 hyc.py hi.hc
+python3 hyc.py docs/hi.hc
 ```
 
 or
