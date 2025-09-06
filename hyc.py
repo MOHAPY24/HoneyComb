@@ -30,7 +30,7 @@ if __name__ == "__main__":
                 cptr = 0
                 pass
         if '--help' in cmd:
-            print("HoneyComb 0.0.1 \nHoneyComb is a Esoteric Programming Language (Esolang) made to have a tape like structure simular to a Honeycomb.\nHaving 3D movement throughout the Honeycomb expanding from up and down to entering a sector of a Honeycomb.\nWriten in Python 3.15.0, it is lightweight (written under 300 lines), memory safe, cleaned up automaticly by Python and the normal interperter itself and modular.\n\n '+' -- Add one to current cell in current axis in current comb.\n '-' -- Minus one from current cell in current axis in current comb.\n '.' -- Print raw value of current cell in current axis in current comb.")
+            print("HoneyComb 0.0.1 \nHoneyComb is a Esoteric Programming Language (Esolang) made to have a tape like structure simular to a Honeycomb.\nHaving 3D movement throughout the Honeycomb expanding from up and down to entering a sector of a Honeycomb.\nWriten in Python 3.15.0, it is lightweight (written under 300 lines), memory safe, cleaned up automaticly by Python and the normal interperter itself and modular.")
             pass
         if "quit" in cmd:
             break
