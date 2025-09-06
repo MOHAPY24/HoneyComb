@@ -102,7 +102,7 @@ Contributions are welcome! 👐
 
 ## More Info
 
-For more information see [general.md](general.md).
+For more information see: [general.md](general.md) for general information and see (Syntax.md)[Syntax.md] for general usage information like syntax.
 
 ## 📜 License
 
