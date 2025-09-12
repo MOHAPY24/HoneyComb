@@ -18,10 +18,10 @@
 ## 📖 Whats new in 1.0.0? 
 **1.0.0** is the first tested and tried official first release of HoneyComb (0.0.1 was not fully tested and was not the official first release). As a new version comes, there must be fixes:
 
-> Fixed REPL IndexError
-> More error handiling
-> Fixed syntax
-> Cleaner Code
+1. Fixed REPL IndexError
+2. More error handiling
+3. Fixed syntax
+4. Cleaner Code
 
 
 ## ✨ Features
