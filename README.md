@@ -8,11 +8,21 @@
 ![Platform](https://img.shields.io/badge/platform-cross--platform-lightgrey.svg)
 ![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
 
-> 🧪 **HoneyComb** is a **multidimensional, esoteric programming language** inspired by the geometry of hexagonal grids.
+> 🧪 **HoneyComb** 1.0.0 is a **multidimensional, esoteric programming language** inspired by the geometry of hexagonal grids.
+> ***1.0.0*** Is the first official and tested version of HoneyComb.
 > ✅ The **core interpreter** and **runtime grid** are complete!
 > ⚡ Currently supports execution but not every planned feature yet.
 
 ---
+
+## 📖 Whats new in 1.0.0? 
+**1.0.0** is the first tested and tried official first release of HoneyComb (0.0.1 was not fully tested and was not the official first release). As a new version comes, there must be fixes:
+
+> Fixed REPL IndexError
+> More error handiling
+> Fixed syntax
+> Cleaner Code
+
 
 ## ✨ Features
 
