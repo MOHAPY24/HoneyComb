@@ -4,11 +4,14 @@ import sys
 
 inte = Interperter()
 
-if sys.argv and '.hc' in sys.argv[1]:
-    inte.load_file_code(str(sys.argv[1]))
-    inte.parse()
-    print()
-    quit(0)
+try:
+    if sys.argv and '.hc' in sys.argv[1]:
+        inte.load_file_code(str(sys.argv[1]))
+        inte.parse()
+        print()
+        quit(0)
+except IndexError:
+    pass
 
 cptr = 0
 
@@ -30,12 +33,13 @@ if __name__ == "__main__":
                 cptr = 0
                 pass
         if '--help' in cmd:
-            print("HoneyComb 0.0.1 \nHoneyComb is a Esoteric Programming Language (Esolang) made to have a tape like structure simular to a Honeycomb.\nHaving 3D movement throughout the Honeycomb expanding from up and down to entering a sector of a Honeycomb.\nWriten in Python 3.15.0, it is lightweight (written under 300 lines), memory safe, cleaned up automaticly by Python and the normal interperter itself and modular.")
+            print("HoneyComb 0.0.1 \nHoneyComb is a Esoteric Programming Language (Esolang) made to have a tape like structure simular to a Honeycomb.\nHaving 3D movement throughout the Honeycomb expanding from up and down to entering a sector of a Honeycomb.\nWriten in Python 3.15.0, it is lightweight, memory safe, cleaned up automaticly by Python and the normal interperter itself and modular.")
             pass
-        if "quit" in cmd:
+        elif "quit" in cmd:
             break
-        inte.add_code(cmd)
-        inte.parse()
-        print()
+        else:
+            inte.add_code(cmd)
+            inte.parse()
+            print()
         
         cptr += 1

@@ -47,7 +47,7 @@ class Interperter:
             raise FileNotFoundError(f"File does not exist, wasnt given or not using '.hc' file extension.")
 
     def error(self):
-        raise Exception(f"{datetime.datetime.now()}: Error occured in interpertation")
+        raise UnrecognizedToken(self.current_token.name, self.code_pointer - 1)
 
     def tokenize(self):
                 if self.code_pointer > len(self.code) -1:
@@ -77,8 +77,8 @@ class Interperter:
                 elif current_char == "V" and self.comment_mode != True:
                     token = Token("V", TOKENS.get("V"))
                     return token
-                elif current_char == "\ ".strip() and self.comment_mode != True:
-                    token = Token("\ ".strip(), TOKENS.get("\ ".strip()))
+                elif current_char == "W" and self.comment_mode != True:
+                    token = Token("W", TOKENS.get("W"))
                     return token
                 elif current_char == "/" and self.comment_mode != True:
                     token = Token("/", TOKENS.get("/"))
@@ -118,6 +118,12 @@ class Interperter:
                     return token
                 elif current_char.isdigit() and self.comment_mode != True:
                     token = Token(current_char, 'INT')
+                    return token
+                elif current_char == "[" and self.comment_mode != True:
+                    token = Token("[", TOKENS.get("["))
+                    return token
+                elif current_char == "]" and self.comment_mode != True:
+                    token = Token("]", TOKENS.get("]"))
                     return token
         
                 else:
@@ -208,7 +214,7 @@ class Interperter:
     
     def prcc(self):
         cmd = self.current_token.name
-        if cmd == "\ ".strip():
+        if cmd == "W":
             if self.ymode:
                 self.ccomby -= 1
             else:
@@ -327,6 +333,8 @@ class Interperter:
                     self.xptr = int(self.code[self.code_pointer + 1])
         else:
             self.error()
+            
+
     
     def parse(self):
         ast = []
@@ -354,7 +362,7 @@ class Interperter:
             elif "V" in cmd1:
                 self.pcy()
                 ast.append(CellDown())
-            elif "\ ".strip() in cmd1:
+            elif "W" in cmd1:
                 self.prcc()
                 ast.append(PreviousComb())
             elif "/" in cmd1:
@@ -398,7 +406,7 @@ class Interperter:
             elif "INT" in self.current_token.type:
                 pass
             else:
-                raise SyntaxError(f'{datetime.datetime.now()}: {cmd1} is valid syntax but it hasnt been mapped or your interperter is broken, either re-install HoneyComb or try again.')
+                raise UnmappedToken(cmd1, self.code_pointer - 1)
             self.current_token = self.tokenize()
         
 

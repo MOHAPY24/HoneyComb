@@ -135,7 +135,7 @@ class SavePollen(ASTNode):
 
 class PreviousComb(ASTNode):
     def __init__(self):
-        self.op = '\ '.strip()
+        self.op = 'W'
     
     def __str__(self):
         return self.op
@@ -207,6 +207,27 @@ class CommentChar(ASTNode):
 class If0(ASTNode):
     def __init__(self):
         self.op = "#"
+    
+    def __str__(self):
+        return self.op
+    
+    def __repr__(self):
+        return self.__str__()
+    
+    
+class LpS(ASTNode):
+    def __init__(self):
+        self.op = "["
+    
+    def __str__(self):
+        return self.op
+    
+    def __repr__(self):
+        return self.__str__()
+
+class LpE(ASTNode):
+    def __init__(self):
+        self.op = "]"
     
     def __str__(self):
         return self.op
