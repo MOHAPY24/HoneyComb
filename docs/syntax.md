@@ -43,7 +43,7 @@ HoneyComb syntax is made up of **single-character operators**. Each operator man
 HoneyComb uses the idea of **combs** — groups of cells inside each dimension.
 
 * `/` → Move to **next comb** (in X or Y depending on mode)
-* `\` → Move to **previous comb** (in X or Y depending on mode)
+* `W` → Move to **previous comb** (in X or Y depending on mode) (Used to be \ but now replaced due to parsing errors)
 
 ---
 
